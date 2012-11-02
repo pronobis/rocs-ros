@@ -1,0 +1,14 @@
+<package>
+  <description brief="rocs_test_mapping">
+
+     rocs_test_mapping
+
+  </description>
+  <author>Andrzej Pronobis</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rocs_test_mapping</url>
+
+</package>
+
+
