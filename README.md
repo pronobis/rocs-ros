@@ -1,4 +1,4 @@
 ROCS-ROS
 ========
 
-ROS components relying on the ROCS toolkit.
+ROS components related to the ROCS toolkit.

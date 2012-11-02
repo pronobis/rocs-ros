@@ -1,0 +1,13 @@
+<stack>
+  <description brief="ROS components related to the ROCS toolkit.">
+  </description>
+  <author>Maintained by Andrzej Pronobis</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/joystick_drivers</url>
+  <depend stack="common_msgs" /> <!-- geometry_msgs, sensor_msgs, diagnostic_msgs -->
+  <depend stack="common_rosdeps" /> 
+  <depend stack="diagnostics" /> <!-- diagnostic_updater -->
+  <depend stack="ros" /> <!-- roslib -->
+  <depend stack="ros_comm" /> <!-- std_msgs, rospy, rosbag, roscpp, std_srvs -->
+</stack>
