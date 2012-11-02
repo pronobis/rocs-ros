@@ -1,6 +1,6 @@
 <launch>
   <!-- Arguments -->
-  <arg name="world" default="$(find stage)/world/willow-erratic.world"/>
+  <arg name="world" default="$(find rocs_simulation)/stage_worlds/willow-erratic.world"/>
   <arg name="use_sim_time" default="true"/>
 
   <!-- Set use_sim_time flag -->
