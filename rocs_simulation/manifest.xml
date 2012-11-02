@@ -9,6 +9,8 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/rocs_simulation</url>
 
+  <depend package="rocs_teleop"/>
+
 </package>
 
 
