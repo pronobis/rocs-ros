@@ -1,0 +1,11 @@
+<launch>
+
+  <!--- Teleop Joystick -->
+  <node pkg="rocs_teleop" type="rocs_teleop_joystick" name="rocs_teleop_joystick" output="screen">
+    <param name="scale_angular" value="1.5"/>
+    <param name="scale_linear" value="0.5"/>
+  </node>
+
+  <node pkg="joy" type="joy_node" name="joystick"/>
+
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="rocs_teleop" type="rocs_teleop_keyboard" name="rocs_teleop_keyboard"  output="screen">
+    <param name="scale_linear" value="0.5" type="double"/>
+    <param name="scale_angular" value="1.5" type="double"/>
+  </node>
+
+</launch>
