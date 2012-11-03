@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- Arguments -->
+  <arg name="world" default="$(find rocs_simulation)/stage_worlds/willow-erratic.world"/>
+
+  <!-- Simulation -->
+  <include file="$(find rocs_simulation)/launch/stage.launch">
+           <arg name="use_sim_time" value="true" />
+           <arg name="world" value="$(arg world)" />
+  </include>
+
+  <!-- GMapping -->
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" args="" respawn="false" output="log">
+        <remap from="scan" to="base_scan"/>
+        <!-- Params to be added here! -->
+  </node>
+</launch>

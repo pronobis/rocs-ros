@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- GMapping with Simulation -->
+  <include file="$(find rocs_test_mapping)/launch/gmapping_stage.launch">
+           <arg name="world" value="$(find rocs_simulation)/stage_worlds/cvap7_dora.world" />
+  </include>
+
+</launch>
