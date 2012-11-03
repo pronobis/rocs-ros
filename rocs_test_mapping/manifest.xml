@@ -9,6 +9,8 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/rocs_test_mapping</url>
 
+  <depend package="rocs_simulation"/>
+
 </package>
 
 
