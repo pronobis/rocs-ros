@@ -1,0 +1,188 @@
+\section{\-Turtlebot\-Teleop \-Class \-Reference}
+\label{classTurtlebotTeleop}\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Turtlebot\-Teleop} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Private \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf joy\-Callback} (const sensor\-\_\-msgs\-::\-Joy\-::\-Const\-Ptr \&joy)
+\item 
+void {\bf publish} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bf a\-\_\-scale\-\_\-}
+\item 
+int {\bf angular\-\_\-}
+\item 
+int {\bf deadman\-\_\-axis\-\_\-}
+\item 
+bool {\bf deadman\-\_\-pressed\-\_\-}
+\item 
+ros\-::\-Subscriber {\bf joy\-\_\-sub\-\_\-}
+\item 
+double {\bf l\-\_\-scale\-\_\-}
+\item 
+geometry\-\_\-msgs\-::\-Twist {\bf last\-\_\-published\-\_\-}
+\item 
+int {\bf linear\-\_\-}
+\item 
+ros\-::\-Node\-Handle {\bf nh\-\_\-}
+\item 
+ros\-::\-Node\-Handle {\bf ph\-\_\-}
+\item 
+boost\-::mutex {\bf publish\-\_\-mutex\-\_\-}
+\item 
+ros\-::\-Timer {\bf timer\-\_\-}
+\item 
+ros\-::\-Publisher {\bf vel\-\_\-pub\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 37 of file joy.\-cpp.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}}
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{\-Turtlebot\-Teleop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Turtlebot\-Teleop\-::\-Turtlebot\-Teleop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classTurtlebotTeleop_ad7b298eab45f53c4b701184fe32bf914}
+
+
+\-Definition at line 60 of file joy.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!joy\-Callback@{joy\-Callback}}
+\index{joy\-Callback@{joy\-Callback}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{joy\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Turtlebot\-Teleop\-::joy\-Callback} (
+\begin{DoxyParamCaption}
+\item[{const sensor\-\_\-msgs\-::\-Joy\-::\-Const\-Ptr \&}]{joy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_aa94b680ce3a5269dfe3d9d9a476e2054}
+
+
+\-Definition at line 80 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!publish@{publish}}
+\index{publish@{publish}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{publish}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Turtlebot\-Teleop\-::publish} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a4b7829acc3ee31188c64e979bba06c8a}
+
+
+\-Definition at line 90 of file joy.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!a\-\_\-scale\-\_\-@{a\-\_\-scale\-\_\-}}
+\index{a\-\_\-scale\-\_\-@{a\-\_\-scale\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{a\-\_\-scale\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Turtlebot\-Teleop\-::a\-\_\-scale\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a54ffb87bd2f457ec15da5582c5c57597}
+
+
+\-Definition at line 49 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!angular\-\_\-@{angular\-\_\-}}
+\index{angular\-\_\-@{angular\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{angular\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Turtlebot\-Teleop\-::angular\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a6ffe51200bedf54be736c7d150f1ddf5}
+
+
+\-Definition at line 48 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!deadman\-\_\-axis\-\_\-@{deadman\-\_\-axis\-\_\-}}
+\index{deadman\-\_\-axis\-\_\-@{deadman\-\_\-axis\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{deadman\-\_\-axis\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Turtlebot\-Teleop\-::deadman\-\_\-axis\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a58071795d1025f8d5b8650e5625a47b1}
+
+
+\-Definition at line 48 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!deadman\-\_\-pressed\-\_\-@{deadman\-\_\-pressed\-\_\-}}
+\index{deadman\-\_\-pressed\-\_\-@{deadman\-\_\-pressed\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{deadman\-\_\-pressed\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Turtlebot\-Teleop\-::deadman\-\_\-pressed\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a343c1fd576883c946c8a106039b4f66f}
+
+
+\-Definition at line 55 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!joy\-\_\-sub\-\_\-@{joy\-\_\-sub\-\_\-}}
+\index{joy\-\_\-sub\-\_\-@{joy\-\_\-sub\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{joy\-\_\-sub\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Subscriber {\bf \-Turtlebot\-Teleop\-::joy\-\_\-sub\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a663ab35d03be3b3f7e8d3cdea471b147}
+
+
+\-Definition at line 51 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!l\-\_\-scale\-\_\-@{l\-\_\-scale\-\_\-}}
+\index{l\-\_\-scale\-\_\-@{l\-\_\-scale\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{l\-\_\-scale\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Turtlebot\-Teleop\-::l\-\_\-scale\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a7b259719ee155dba7ade2e7b668fbefc}
+
+
+\-Definition at line 49 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!last\-\_\-published\-\_\-@{last\-\_\-published\-\_\-}}
+\index{last\-\_\-published\-\_\-@{last\-\_\-published\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{last\-\_\-published\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}geometry\-\_\-msgs\-::\-Twist {\bf \-Turtlebot\-Teleop\-::last\-\_\-published\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a71d2287705917566bd33239db260a680}
+
+
+\-Definition at line 53 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!linear\-\_\-@{linear\-\_\-}}
+\index{linear\-\_\-@{linear\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{linear\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Turtlebot\-Teleop\-::linear\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a149ff3966ce0cafd27a9610e247de19e}
+
+
+\-Definition at line 48 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!nh\-\_\-@{nh\-\_\-}}
+\index{nh\-\_\-@{nh\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{nh\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Node\-Handle {\bf \-Turtlebot\-Teleop\-::nh\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_aa25e6e15a9d9a5d3b5eb135e11a888eb}
+
+
+\-Definition at line 46 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!ph\-\_\-@{ph\-\_\-}}
+\index{ph\-\_\-@{ph\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{ph\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Node\-Handle {\bf \-Turtlebot\-Teleop\-::ph\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a966ac7baf800aa218607c7449087c16e}
+
+
+\-Definition at line 46 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!publish\-\_\-mutex\-\_\-@{publish\-\_\-mutex\-\_\-}}
+\index{publish\-\_\-mutex\-\_\-@{publish\-\_\-mutex\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{publish\-\_\-mutex\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::mutex {\bf \-Turtlebot\-Teleop\-::publish\-\_\-mutex\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_aa9d3796c5ad60a96824ac351906ef0aa}
+
+
+\-Definition at line 54 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!timer\-\_\-@{timer\-\_\-}}
+\index{timer\-\_\-@{timer\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{timer\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Timer {\bf \-Turtlebot\-Teleop\-::timer\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_ac6f49f7a752545dfea96a6b2829bf0dc}
+
+
+\-Definition at line 56 of file joy.\-cpp.
+
+\index{\-Turtlebot\-Teleop@{\-Turtlebot\-Teleop}!vel\-\_\-pub\-\_\-@{vel\-\_\-pub\-\_\-}}
+\index{vel\-\_\-pub\-\_\-@{vel\-\_\-pub\-\_\-}!TurtlebotTeleop@{\-Turtlebot\-Teleop}}
+\subsubsection[{vel\-\_\-pub\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}ros\-::\-Publisher {\bf \-Turtlebot\-Teleop\-::vel\-\_\-pub\-\_\-}\hspace{0.3cm}{\ttfamily  [private]}}\label{classTurtlebotTeleop_a944ab5d8ea5a71817ac8d02ffdbc2188}
+
+
+\-Definition at line 50 of file joy.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf joy.\-cpp}\end{DoxyCompactItemize}

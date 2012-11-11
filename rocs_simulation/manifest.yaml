@@ -1,0 +1,11 @@
+authors: Andrzej Pronobis
+brief: ROCS Simulation Package
+depends:
+- rocs_teleop
+description: "\n     Provides launch files for running the system in simulation.\n\
+  \  "
+license: BSD
+msgs: []
+package_type: package
+srvs: []
+url: http://github.com/pronobis/rocs-ros/wiki/rocs_simulation
