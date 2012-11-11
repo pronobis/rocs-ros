@@ -1,9 +1,0 @@
-authors: Andrzej Pronobis
-brief: ROCS Library
-depends: ''
-description: "\n     Provides the ROCS library.\n  "
-license: BSD
-msgs: []
-package_type: package
-srvs: []
-url: http://github.com/pronobis/rocs-ros/wiki/rocs_lib
