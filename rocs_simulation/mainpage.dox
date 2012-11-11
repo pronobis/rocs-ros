@@ -2,13 +2,6 @@
 \mainpage
 \htmlinclude manifest.html
 
-\b rocs_simulation 
-
-<!-- 
-Provide an overview of your package.
--->
-
--->
-
+This package does not offer any C++ API.
 
 */

@@ -1,15 +1,21 @@
 <package>
-  <description brief="rocs_simulation">
 
-     rocs_simulation
-
+  <!-- Information -->
+  <description brief="ROCS Simulation Package">
+     Provides launch files for running the system in simulation.
   </description>
   <author>Andrzej Pronobis</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/rocs_simulation</url>
-
+  <url>http://github.com/pronobis/rocs-ros/wiki/rocs_simulation</url>
+  
+  <!-- Dependencies -->
   <depend package="rocs_teleop"/>
+
+  <!-- Configuration -->
+  <export>
+    <rosdoc config="rosdoc.yaml" />
+  </export>
 
 </package>
 
