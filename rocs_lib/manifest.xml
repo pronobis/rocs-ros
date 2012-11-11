@@ -1,0 +1,22 @@
+<package>
+
+  <!-- Information -->
+  <description brief="ROCS Library">
+     Provides the ROCS library.
+  </description>
+  <author>Andrzej Pronobis</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://github.com/pronobis/rocs-ros/wiki/rocs_lib</url>
+
+  <!-- Dependencies -->
+
+  <!-- Configuration -->
+  <export>
+    <rosdoc config="rosdoc.yaml" />
+    <!-- doxymaker external="http://link.to.external/page.html"/-->
+  </export>
+
+</package>
+
+
