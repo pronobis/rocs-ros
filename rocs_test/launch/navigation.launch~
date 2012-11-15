@@ -1,0 +1,25 @@
+<launch>
+
+  <!-- Set the name of the map yaml file: can be overridden on the command line. -->
+  <arg name="map" default="/home/semmap/3map.yaml" />
+
+  <!--- Run AMCL -->
+  <include file="$(find amcl)/examples/amcl_diff.launch" />
+
+  <!-- Run the map server with the desired map -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map)" output="screen"/>
+
+  <!-- The move_base node 
+  <include file="$(find rocs_test)/launch/move_base.launch" />
+  -->
+
+  <!-- The move_base node -->
+  <include file="$(find rocs_test)/launch/move_base_bis.launch" />
+
+
+
+  <!--- Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(find rocs_test)/config/navigation_test.vcg"/> 
+  
+</launch>
+

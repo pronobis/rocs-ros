@@ -1,0 +1,87 @@
+Background\ ColorB=0
+Background\ ColorG=0
+Background\ ColorR=0
+Camera\ Config=1.5448 1.53678 109.753 -16.4134 -10.8547 -34.5895
+Camera\ Type=rviz::OrbitViewController
+Fixed\ Frame=/map
+Global\ Plan.Alpha=1
+Global\ Plan.ColorB=0
+Global\ Plan.ColorG=0.584314
+Global\ Plan.ColorR=1
+Global\ Plan.Enabled=1
+Global\ Plan.Topic=/move_base_node/TrajectoryPlannerROS/global_plan
+Inflated\ Obstacles.Alpha=1
+Inflated\ Obstacles.ColorB=1
+Inflated\ Obstacles.ColorG=0
+Inflated\ Obstacles.ColorR=0
+Inflated\ Obstacles.Enabled=1
+Inflated\ Obstacles.Topic=/move_base_node/local_costmap/inflated_obstacles
+Local\ Plan.Alpha=1
+Local\ Plan.ColorB=1
+Local\ Plan.ColorG=0
+Local\ Plan.ColorR=0
+Local\ Plan.Enabled=1
+Local\ Plan.Topic=/move_base_node/TrajectoryPlannerROS/local_plan
+Map.Alpha=0.7
+Map.Draw\ Behind=0
+Map.Enabled=1
+Map.Topic=/map
+NavFn\ Plan.Alpha=1
+NavFn\ Plan.ColorB=0
+NavFn\ Plan.ColorG=1
+NavFn\ Plan.ColorR=0.1
+NavFn\ Plan.Enabled=1
+NavFn\ Plan.Topic=/move_base_node/NavfnROS/plan
+Obstacles.Alpha=1
+Obstacles.ColorB=0
+Obstacles.ColorG=0
+Obstacles.ColorR=1
+Obstacles.Enabled=1
+Obstacles.Topic=/move_base_node/local_costmap/obstacles
+Property\ Grid\ Splitter=619,78
+Property\ Grid\ State=expanded=.Global Options,Map.Enabled,Robot Footprint.Enabled,Obstacles.Enabled,Inflated Obstacles.Enabled,Unknown Space.Enabled,Local Plan.Enabled,Global Plan.Enabled,NavFn Plan.Enabled;splitterratio=0.5
+QMainWindow=000000ff00000000fd00000003000000000000011d0000030bfc0200000001fb000000100044006900730070006c006100790073010000001d0000030b000000ee00ffffff00000001000001310000030bfc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000000c90000006700fffffffb0000000a0056006900650077007301000000ec0000016d000000bb00fffffffb0000001200530065006c0065006300740069006f006e010000025f000000c90000006700ffffff00000003000005ff0000003efc0100000001fb0000000800540069006d00650100000000000005ff000002bf00ffffff000003a50000030b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+Robot\ Footprint.Alpha=1
+Robot\ Footprint.ColorB=0
+Robot\ Footprint.ColorG=0
+Robot\ Footprint.ColorR=1
+Robot\ Footprint.Enabled=1
+Robot\ Footprint.Topic=/move_base_node/local_costmap/robot_footprint
+Target\ Frame=<Fixed Frame>
+Tool\ 2D\ Nav\ GoalTopic=move_base_simple/goal
+Tool\ 2D\ Pose\ EstimateTopic=initialpose
+Unknown\ Space.Alpha=1
+Unknown\ Space.ColorB=0
+Unknown\ Space.ColorG=1
+Unknown\ Space.ColorR=0.1
+Unknown\ Space.Enabled=0
+Unknown\ Space.Topic=/move_base_node/local_costmap/unknown_space
+[Display0]
+ClassName=rviz::MapDisplay
+Name=Map
+[Display1]
+ClassName=rviz::PolygonDisplay
+Name=Robot Footprint
+[Display2]
+ClassName=rviz::GridCellsDisplay
+Name=Obstacles
+[Display3]
+ClassName=rviz::GridCellsDisplay
+Name=Inflated Obstacles
+[Display4]
+ClassName=rviz::GridCellsDisplay
+Name=Unknown Space
+[Display5]
+ClassName=rviz::PathDisplay
+Name=Local Plan
+[Display6]
+ClassName=rviz::PathDisplay
+Name=Global Plan
+[Display7]
+ClassName=rviz::PathDisplay
+Name=NavFn Plan
+[Window]
+Height=876
+Width=1535
+X=0
+Y=0

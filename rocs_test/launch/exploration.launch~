@@ -1,0 +1,51 @@
+<launch>
+
+<!--- ROSARIA -->
+  <include file="$(find rocs_test)/launch/rosaria.launch"/>
+
+
+<!--- Teleoperation -->
+
+<!---
+  <include file="$(find rocs_teleop)/launch/joystick.launch"/>
+-->
+
+  <node pkg="joy" type="joy_node" name="joy_node"/>
+  <node pkg="rocs_test" type="rocs_teleop_joystick" name="rocs_teleop_joystick" output="screen"/>
+
+<!---
+  <node pkg="joy" type="joy_node" name="joy_node"/>
+  <node pkg="ROSARIA" type="teleop_p3dx" name="teleop_p3dx" output="screen"/>
+-->
+
+
+
+
+<!--- Transformation -->
+  <node pkg="ROSARIA" type="transform" name="transform" output="screen"/>
+
+
+<!--- Laser -->
+  <include file="$(find rocs_test)/launch/laser_hokuyo.launch"/>
+
+
+  <!--- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen"/>
+
+  <!--- Run AMCL 
+  <include file="$(find amcl)/examples/amcl_diff.launch" />
+  -->
+
+
+  <!-- The move_base node -->
+  <include file="$(find rocs_test)/launch/move_base.launch" />
+ 
+  <!--- Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(find rocs_test)/config/mapping.vcg"/> 
+
+
+
+
+
+
+</launch>

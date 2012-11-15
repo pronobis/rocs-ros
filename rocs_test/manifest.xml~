@@ -1,0 +1,22 @@
+<package>
+  <description brief="rocs_test">
+
+     rocs_test
+
+  </description>
+  <author>semmap</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rocs_test</url>
+  <depend package="rocs_teleop"/>
+  <depend package="rocs_simulation"/>
+  <depend package="ROSARIA"/>
+  <depend package="hokuyo_node"/>
+  <depend package="sicktoolbox"/>
+  <depend package="gmapping"/>
+  <depend package="map_server"/>
+  <depend package="amcl"/>
+
+</package>
+
+

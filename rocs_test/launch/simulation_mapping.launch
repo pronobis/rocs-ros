@@ -1,0 +1,23 @@
+<launch>
+
+  <master auto="start"/>
+
+  <!-- Arguments -->
+  <arg name="use_sim_time" default="true"/>
+
+  <!-- Move_base -->
+  <include file="$(find rocs_test)/config/move_base_config/move_base.launch"/>
+
+  <!--- Simulation -->
+  <include file="$(find rocs_simulation)/launch/stage.launch">
+           <arg name="use_sim_time" value="$(arg use_sim_time)" />
+           <arg name="world" value="$(find rocs_simulation)/stage_worlds/cvap7_dora.world" />
+  </include>
+
+  <!-- Gmapping -->
+  <include file="$(find rocs_test)/config/move_base_config/slam_gmapping.launch"/>  
+
+  <!--- RVIZ -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rocs_test)/config/rviz/simulation_mapping.vcg" />
+
+</launch>
