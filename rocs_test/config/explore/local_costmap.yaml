@@ -1,0 +1,13 @@
+#Independent settings for the local planner's costmap
+local_costmap: 
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 1.0
+  publish_frequency: 0.5
+  static_map: false
+  rolling_window: true
+  width: 3.0
+  height: 5.0
+  resolution: 0.05
+  origin_x: 0.0
+  origin_y: 0.0

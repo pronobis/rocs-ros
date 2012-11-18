@@ -1,0 +1,41 @@
+<launch>
+
+  <master auto="start"/>
+
+  <!-- Arguments -->
+  <arg name="use_sim_time" default="true"/>
+
+  <!--- Simulation -->
+  <include file="$(find rocs_simulation)/launch/stage.launch">
+           <arg name="use_sim_time" value="$(arg use_sim_time)" />
+           <arg name="world" value="$(find rocs_simulation)/stage_worlds/cvap7_dora.world" />
+  </include>
+
+  <!--- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen">
+    <remap from="scan" to="base_scan" />
+    <param name="inverted_laser" value="false" />
+    <param name="maxUrange" value="30.0" />
+    <param name="particles" value="30" />
+    <param name="delta" value="0.10" />
+    <param name="xmin" value="-15.0" />
+    <param name="xmax" value="15.0" />
+    <param name="ymin" value="-15.0" />
+    <param name="ymax" value="15.0" />
+    <param name="angularUpdate" value="0.5" />
+    <param name="linearUpdate" value="1.0" />
+    <param name="map_update_interval" value="1.0" />
+    <param name="resampleThreshold" value="0.3" />
+    <param name="llsamplerange" value ="0.05" />
+    <param name="llsamplestep" value ="0.05" />
+    <param name="lasamplerange" value ="0.05" />
+    <param name="lasamplestep" value ="0.05" />
+  </node>
+
+  <include file="$(find rocs_test)/config/explore/move.xml" />
+  <include file="$(find rocs_test)/config/explore/explore_slam.xml" />
+
+  <!--- RVIZ -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rocs_test)/config/rviz/simulation_exploration.vcg" />
+  
+</launch>

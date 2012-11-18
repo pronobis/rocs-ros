@@ -19,6 +19,7 @@
   <depend package="amcl"/>
   <depend package="rviz"/>
   <depend package="stage"/>
+  <depend package="explore"/>
 
 </package>
 

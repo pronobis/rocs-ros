@@ -1,0 +1,13 @@
+<launch>
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" >
+    <rosparam file="$(find explore_stage)/config/footprint.yaml" command="load" />
+
+    <rosparam file="$(find explore_stage)/config/costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find explore_stage)/explore/global_costmap.yaml" command="load" />
+    <rosparam file="$(find explore_stage)/explore/navfn_params.yaml" command="load" />
+
+    <rosparam file="$(find explore_stage)/config/costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find explore_stage)/explore/local_costmap.yaml" command="load" />
+    <rosparam file="$(find explore_stage)/explore/trajectory_planner_params.yaml" command="load" />
+  </node>
+</launch>
