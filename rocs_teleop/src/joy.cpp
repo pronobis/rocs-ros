@@ -60,7 +60,7 @@ private:
 TurtlebotTeleop::TurtlebotTeleop():
   ph_("~"),
   linear_(1),
-  angular_(0),
+  angular_(2),	//Changed to (2) 
   deadman_axis_(4),
   l_scale_(0.3),
   a_scale_(0.9)
@@ -91,7 +91,7 @@ void TurtlebotTeleop::publish()
 {
   boost::mutex::scoped_lock lock(publish_mutex_);
 
-  if (deadman_pressed_)
+  if (true)	//Publish always
   {
     vel_pub_.publish(last_published_);
   }
