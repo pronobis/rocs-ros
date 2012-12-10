@@ -1,0 +1,24 @@
+<!-- Starts Prosilica camera in streaming mode. -->
+
+<launch>
+
+<!-- Image view node -->    
+    <node pkg="image_view" type="image_view" respawn="false" name="prosilica_viewer_mono">
+      <param name="autosize" type="bool" value="False" />
+      <param name="window_name" type="str" value="'Prosilica Camera (Mono)'" />
+      <remap from="image" to="/prosilica/image_raw" />
+    </node>
+
+<!-- Prosilica camera -->    
+  <include file="$(find prosilica_camera)/launch/generic.launch">
+    <arg name="camera"       value="prosilica" />
+    <arg name="ip_address"   value="192.168.1.23" />
+    <arg name="trigger_mode" value="streaming" />
+    <arg name="frame_id"     value="high_def_optical_frame" />
+
+    <param name="gain_auto" type="bool" value="False"/>
+    <param name="gain" type="int" value="0"/>	
+
+  </include>
+
+</launch>

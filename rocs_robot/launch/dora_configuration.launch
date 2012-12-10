@@ -1,0 +1,31 @@
+<launch>
+
+<!--- ROSARIA -->
+  <include file="$(find rocs_robot)/launch/rosaria.launch"/>
+
+
+<!--- Teleoperation -->
+<include file="$(find rocs_teleop)/launch/joystick.launch"/>
+
+<!--- Transformation 
+  <node pkg="ROSARIA" type="transform" name="transform" output="screen"/>
+-->
+
+<!-- publish the static transform from the center of the robot to the laser rangefinder (required for slam_gmapping) --> 
+	<node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.224 0 0.125 0 0 0 base_link laser 100" />
+
+<!-- publish the static transform from the center of the robot to the kinect (required for rgdbslam)  
+	<node pkg="tf" type="static_transform_publisher" name="odom_to_camera" args="0.2 0 1.20 0 0 0 base_link openni_camera 100" />
+-->
+
+<!--- Laser --> 
+  <include file="$(find rocs_robot)/launch/laser_hokuyo.launch"/>
+
+<!--- Prosilica camera --> 
+  <include file="$(find rocs_robot)/launch/prosilica_camera.launch"/>
+
+<!--- Laser --> 
+  <include file="$(find rocs_robot)/launch/usb_camera.launch"/>
+
+
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+
+<!--- ROSARIA -->
+  <node pkg="ROSARIA" type="RosAria" name="RosAria" output="screen">
+	<param name="port" value="/dev/ttyUSB0" />
+	<remap from="/RosAria/cmd_vel" to="/cmd_vel"/>
+	
+	<remap from="/RosAria/pose" to="/odom"/>
+	
+  </node>
+
+</launch>
