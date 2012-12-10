@@ -1,0 +1,16 @@
+<launch>
+
+ 	<node pkg="re_vision" type="ObjectDetector" name="ObjectDetector"  args="-v" output="screen">
+		<remap from="/camera_info" to="/prosilica/camera_info" />
+  	</node>
+
+ 	<node pkg="image_view" type="image_view" name="detector_visualization" respawn="false" output="screen">
+		<remap from="/image" to="/re_vision/detector_visualization" />
+  	</node>
+
+ 	<node pkg="re_object_detector_gui" type="detect" name="detect" respawn="false" output="screen">
+		<remap from="/camera/rgb/image_color" to="/prosilica/image_raw" />
+   	</node>
+
+</launch>
+
