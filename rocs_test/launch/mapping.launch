@@ -1,0 +1,12 @@
+<launch>
+
+<!--- Inicializate robot -->
+  <include file="$(find rocs_robot)/launch/config.launch"/>
+
+<!--- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"/>
+ 
+<!--- Rviz -->
+<node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(find rocs_test)/config/rviz/mapping.vcg"/> 
+
+</launch>
