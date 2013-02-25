@@ -1,7 +1,7 @@
 Background\ ColorB=0
 Background\ ColorG=0
 Background\ ColorR=0
-Camera\ Config=1.1604 1.5104 43.6349 0 0 0
+Camera\ Config=0.9354 4.69042 28.9919 -0.0300917 -0.090084 0
 Camera\ Type=rviz::XYOrbitViewController
 Current\ Goal.Alpha=1
 Current\ Goal.ColorB=0
@@ -58,11 +58,11 @@ Odometry.Angle\ Tolerance=0.1
 Odometry.ColorB=0
 Odometry.ColorG=0.1
 Odometry.ColorR=1
-Odometry.Enabled=1
+Odometry.Enabled=0
 Odometry.Keep=100
 Odometry.Length=1
 Odometry.Position\ Tolerance=0.1
-Odometry.Topic=/RosAria/pose
+Odometry.Topic=/odom
 Particle\ Cloud.Arrow\ Length=0.3
 Particle\ Cloud.ColorB=0
 Particle\ Cloud.ColorG=0.1
@@ -75,19 +75,64 @@ Planner\ Plan.ColorG=1
 Planner\ Plan.ColorR=0.1
 Planner\ Plan.Enabled=1
 Planner\ Plan.Topic=/move_base/NavfnROS/plan
-Property\ Grid\ Splitter=655,78
-Property\ Grid\ State=expanded=.Global Options,Static Map.Enabled;splitterratio=0.5
-QMainWindow=000000ff00000000fd00000003000000000000011d0000032ffc0200000001fb000000100044006900730070006c006100790073010000001d0000032f000000ee00ffffff00000001000001310000032ffc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000000ed0000006700fffffffb0000000a0056006900650077007301000001100000016d000000bb00fffffffb0000001200530065006c0065006300740069006f006e0100000283000000c90000006700ffffff000000030000060f0000003efc0100000001fb0000000800540069006d006501000000000000060f000002bf00ffffff000003b50000032f00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-Robot\ Footprint.Alpha=1
-Robot\ Footprint.ColorB=0
-Robot\ Footprint.ColorG=0
-Robot\ Footprint.ColorR=1
-Robot\ Footprint.Enabled=1
-Robot\ Footprint.Topic=/move_base/local_costmap/robot_footprint
+Property\ Grid\ Splitter=743,78
+Property\ Grid\ State=expanded=.Global Options;splitterratio=0.5
+QMainWindow=000000ff00000000fd00000003000000000000011d00000387fc0200000001fb000000100044006900730070006c006100790073010000001d00000387000000ee00ffffff000000010000013100000387fc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000001080000006700fffffffb0000000a00560069006500770073010000012b00000194000000bb00fffffffb0000001200530065006c0065006300740069006f006e01000002c5000000df0000006700ffffff00000003000004bf0000003efc0100000001fb0000000800540069006d00650100000000000004bf000002bf00ffffff000002650000038700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+Robot\:\ RobotModel\ Link\ back_sonarAlpha=1
+Robot\:\ RobotModel\ Link\ back_sonarEnabled=1
+Robot\:\ RobotModel\ Link\ back_sonarShow\ Axes=0
+Robot\:\ RobotModel\ Link\ back_sonarShow\ Trail=0
+Robot\:\ RobotModel\ Link\ base_linkAlpha=1
+Robot\:\ RobotModel\ Link\ base_linkEnabled=1
+Robot\:\ RobotModel\ Link\ base_linkShow\ Axes=0
+Robot\:\ RobotModel\ Link\ base_linkShow\ Trail=0
+Robot\:\ RobotModel\ Link\ center_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ center_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ center_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ center_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ center_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ center_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ center_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ center_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ front_sonarAlpha=1
+Robot\:\ RobotModel\ Link\ front_sonarEnabled=1
+Robot\:\ RobotModel\ Link\ front_sonarShow\ Axes=0
+Robot\:\ RobotModel\ Link\ front_sonarShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ swivelAlpha=1
+Robot\:\ RobotModel\ Link\ swivelEnabled=1
+Robot\:\ RobotModel\ Link\ swivelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ swivelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ top_plateAlpha=1
+Robot\:\ RobotModel\ Link\ top_plateEnabled=1
+Robot\:\ RobotModel\ Link\ top_plateShow\ Axes=0
+Robot\:\ RobotModel\ Link\ top_plateShow\ Trail=0
+RobotModel.Alpha=1
+RobotModel.Collision\ Enabled=0
+RobotModel.Enabled=1
+RobotModel.Robot\ Description=robot_description
+RobotModel.TF\ Prefix=
+RobotModel.Update\ Interval=0
+RobotModel.Visual\ Enabled=1
 Static\ Map.Alpha=0.7
 Static\ Map.Draw\ Behind=0
 Static\ Map.Enabled=1
-Static\ Map.Topic=/explore/map
+Static\ Map.Topic=/map
 Target\ Frame=<Fixed Frame>
 Tool\ 2D\ Nav\ GoalTopic=/move_base_simple/goal
 Tool\ 2D\ Pose\ EstimateTopic=initialpose
@@ -98,34 +143,34 @@ Name=Grid
 ClassName=rviz::MapDisplay
 Name=Static Map
 [Display10]
-ClassName=rviz::OdometryDisplay
-Name=Odometry
+ClassName=rviz::RobotModelDisplay
+Name=RobotModel
 [Display2]
 ClassName=rviz::PoseArrayDisplay
 Name=Particle Cloud
 [Display3]
-ClassName=rviz::PolygonDisplay
-Name=Robot Footprint
-[Display4]
 ClassName=rviz::GridCellsDisplay
 Name=Obstacles
-[Display5]
+[Display4]
 ClassName=rviz::GridCellsDisplay
 Name=Inflated Obstacles
-[Display6]
+[Display5]
 ClassName=rviz::PathDisplay
 Name=Global Plan
-[Display7]
+[Display6]
 ClassName=rviz::PathDisplay
 Name=Local Plan
-[Display8]
+[Display7]
 ClassName=rviz::PathDisplay
 Name=Planner Plan
-[Display9]
+[Display8]
 ClassName=rviz::PoseDisplay
 Name=Current Goal
+[Display9]
+ClassName=rviz::OdometryDisplay
+Name=Odometry
 [Window]
-Height=948
-Width=1567
-X=-7
+Height=1000
+Width=1215
+X=1586
 Y=0

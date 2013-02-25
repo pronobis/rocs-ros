@@ -1,7 +1,7 @@
 Background\ ColorB=0
 Background\ ColorG=0
 Background\ ColorR=0
-Camera\ Config=1.5698 3.8104 75.6423 8.95946 -10.027 -3.93405
+Camera\ Config=1.2004 1.6404 38.9598 0 0 0
 Camera\ Type=rviz::OrbitViewController
 Fixed\ Frame=/map
 Global\ Plan.Alpha=1
@@ -38,50 +38,86 @@ Obstacles.ColorG=0
 Obstacles.ColorR=1
 Obstacles.Enabled=1
 Obstacles.Topic=/move_base_node/local_costmap/obstacles
-Property\ Grid\ Splitter=619,78
+Property\ Grid\ Splitter=743,78
 Property\ Grid\ State=expanded=.Global Options;splitterratio=0.5
-QMainWindow=000000ff00000000fd00000003000000000000011d0000030bfc0200000001fb000000100044006900730070006c006100790073010000001d0000030b000000ee00ffffff00000001000001310000030bfc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000000c90000006700fffffffb0000000a0056006900650077007301000000ec0000016d000000bb00fffffffb0000001200530065006c0065006300740069006f006e010000025f000000c90000006700ffffff00000003000005ff0000003efc0100000001fb0000000800540069006d00650100000000000005ff000002bf00ffffff000003a50000030b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-Robot\ Footprint.Alpha=1
-Robot\ Footprint.ColorB=0
-Robot\ Footprint.ColorG=0
-Robot\ Footprint.ColorR=1
-Robot\ Footprint.Enabled=1
-Robot\ Footprint.Topic=/move_base_node/local_costmap/robot_footprint
+QMainWindow=000000ff00000000fd00000003000000000000011d00000387fc0200000001fb000000100044006900730070006c006100790073010000001d00000387000000ee00ffffff000000010000013100000387fc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000001d000000e90000006700fffffffb0000000a00560069006500770073010000010c000001a9000000bb00fffffffb0000001200530065006c0065006300740069006f006e01000002bb000000e90000006700ffffff00000003000004bf0000003efc0100000001fb0000000800540069006d00650100000000000004bf000002bf00ffffff000002650000038700000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+Robot\:\ RobotModel\ Link\ back_sonarAlpha=1
+Robot\:\ RobotModel\ Link\ back_sonarEnabled=1
+Robot\:\ RobotModel\ Link\ back_sonarShow\ Axes=0
+Robot\:\ RobotModel\ Link\ back_sonarShow\ Trail=0
+Robot\:\ RobotModel\ Link\ base_linkAlpha=1
+Robot\:\ RobotModel\ Link\ base_linkEnabled=1
+Robot\:\ RobotModel\ Link\ base_linkShow\ Axes=0
+Robot\:\ RobotModel\ Link\ base_linkShow\ Trail=0
+Robot\:\ RobotModel\ Link\ center_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ center_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ center_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ center_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ center_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ center_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ center_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ center_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ front_sonarAlpha=1
+Robot\:\ RobotModel\ Link\ front_sonarEnabled=1
+Robot\:\ RobotModel\ Link\ front_sonarShow\ Axes=0
+Robot\:\ RobotModel\ Link\ front_sonarShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_left_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_left_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_right_hubcapShow\ Trail=0
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelAlpha=1
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelEnabled=1
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ p3dx_right_wheelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ swivelAlpha=1
+Robot\:\ RobotModel\ Link\ swivelEnabled=1
+Robot\:\ RobotModel\ Link\ swivelShow\ Axes=0
+Robot\:\ RobotModel\ Link\ swivelShow\ Trail=0
+Robot\:\ RobotModel\ Link\ top_plateAlpha=1
+Robot\:\ RobotModel\ Link\ top_plateEnabled=1
+Robot\:\ RobotModel\ Link\ top_plateShow\ Axes=0
+Robot\:\ RobotModel\ Link\ top_plateShow\ Trail=0
+RobotModel.Alpha=1
+RobotModel.Collision\ Enabled=0
+RobotModel.Enabled=1
+RobotModel.Robot\ Description=robot_description
+RobotModel.TF\ Prefix=
+RobotModel.Update\ Interval=0
+RobotModel.Visual\ Enabled=1
 Target\ Frame=/base_link
 Tool\ 2D\ Nav\ GoalTopic=move_base_simple/goal
 Tool\ 2D\ Pose\ EstimateTopic=initialpose
-Unknown\ Space.Alpha=1
-Unknown\ Space.ColorB=0
-Unknown\ Space.ColorG=1
-Unknown\ Space.ColorR=0.1
-Unknown\ Space.Enabled=0
-Unknown\ Space.Topic=/move_base_node/local_costmap/unknown_space
 [Display0]
 ClassName=rviz::MapDisplay
 Name=Map
 [Display1]
-ClassName=rviz::PolygonDisplay
-Name=Robot Footprint
-[Display2]
 ClassName=rviz::GridCellsDisplay
 Name=Obstacles
-[Display3]
+[Display2]
 ClassName=rviz::GridCellsDisplay
 Name=Inflated Obstacles
-[Display4]
-ClassName=rviz::GridCellsDisplay
-Name=Unknown Space
-[Display5]
+[Display3]
 ClassName=rviz::PathDisplay
 Name=Local Plan
-[Display6]
+[Display4]
 ClassName=rviz::PathDisplay
 Name=Global Plan
-[Display7]
+[Display5]
 ClassName=rviz::PathDisplay
 Name=NavFn Plan
+[Display6]
+ClassName=rviz::RobotModelDisplay
+Name=RobotModel
 [Window]
-Height=912
-Width=1551
-X=-8
-Y=-28
+Height=1000
+Width=1215
+X=1584
+Y=-56
