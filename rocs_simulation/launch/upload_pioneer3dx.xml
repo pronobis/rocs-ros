@@ -1,0 +1,6 @@
+<launch>
+  <!-- send table.xml to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find rocs_simulation)/urdf_model/defs/pioneer3dx.xacro" />
+
+</launch>
+

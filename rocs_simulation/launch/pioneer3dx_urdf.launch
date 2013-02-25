@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find rocs_simulation)/launch/upload_pioneer3dx.xml"/>
+  
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+    <remap from="joint_state" to="joint_state"/>
+    <param name="publish_frequency" type="double" value="15.0"/>
+    <param name="tf_prefix" type="string" value=""/>
+  </node>
+
+  <node pkg="rocs_simulation" type="publisher" name="publisher"/>
+</launch>

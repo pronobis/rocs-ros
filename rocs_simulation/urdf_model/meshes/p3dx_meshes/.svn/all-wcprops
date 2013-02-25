@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/usc-ros-pkg/!svn/ver/108/trunk/p2os/p2os_urdf/meshes/p3dx_meshes
+END
+right_wheel.stl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/right_wheel.stl
+END
+back_sonar.stl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/back_sonar.stl
+END
+center_hubcap.stl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/center_hubcap.stl
+END
+top.stl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/top.stl
+END
+center_wheel.stl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/usc-ros-pkg/!svn/ver/97/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/center_wheel.stl
+END
+back_rim.stl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/usc-ros-pkg/!svn/ver/108/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/back_rim.stl
+END
+Coordinates
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/Coordinates
+END
+swivel.stl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/swivel.stl
+END
+front_sonar.stl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/front_sonar.stl
+END
+left_hubcap.stl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/left_hubcap.stl
+END
+chassis.stl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/chassis.stl
+END
+left_wheel.stl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/left_wheel.stl
+END
+front_rim.stl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/usc-ros-pkg/!svn/ver/108/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/front_rim.stl
+END
+right_hubcap.stl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/usc-ros-pkg/!svn/ver/92/trunk/p2os/p2os_urdf/meshes/p3dx_meshes/right_hubcap.stl
+END
