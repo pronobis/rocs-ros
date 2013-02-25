@@ -17,7 +17,7 @@ window
 # Map
 floorplan
 (
-  bitmap "./maps/cas_floor7.jpg"
+  bitmap "./maps/cas_floor7_big_walls.jpg"
   size [38.95 12.6 1.5]
 )
 
