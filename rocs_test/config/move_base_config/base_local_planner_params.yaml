@@ -25,22 +25,15 @@ TrajectoryPlannerROS:
   yaw_goal_tolerance: 0.05
 
   #We'll configure how long and with what granularity we'll forward simulate trajectories
-  sim_time: 1.7
-  sim_granularity: 0.025
-  vx_samples: 3
-  vtheta_samples: 20
+  sim_time: 2
+
 
   #Parameters for scoring trajectories
-  goal_distance_bias: 0.8
+  goal_distance_bias: 0.6
   path_distance_bias: 0.6
   occdist_scale: 0.01
   heading_lookahead: 0.325
 
-  #We'll use the Dynamic Window Approach to control instead of Trajectory Rollout for this example
-  dwa: true
 
-  #How far the robot must travel before oscillation flags are reset
-  oscillation_reset_dist: 0.05
 
-  #Eat up the plan as the robot moves along it
-  prune_plan: true
+
