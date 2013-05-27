@@ -1,0 +1,21 @@
+<package>
+  <description brief="rocs_object_recognition">
+
+     rocs_object_recognition
+
+  </description>
+  <author>semmap</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rocs_object_recognition</url>
+
+ <depend package="image_transport" />
+ <depend package="cv_bridge" />
+<rosdep name="libtbb-dev" />
+
+  <rosdep name="opencv2"/>
+
+
+</package>
+
+
