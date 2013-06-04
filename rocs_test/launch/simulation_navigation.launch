@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <launch>
 
   <master auto="start"/>
@@ -22,5 +24,8 @@
 
   <!--- RVIZ -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rocs_test)/config/rviz/simulation_navigation.vcg" />
+
+  <!--- Urdf model of Pioneer 3-DX -->
+  <include file="$(find rocs_simulation)/launch/pioneer3dx_urdf.launch"/>
 
 </launch>

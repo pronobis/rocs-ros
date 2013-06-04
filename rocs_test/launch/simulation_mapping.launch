@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
   <master auto="start"/>
@@ -5,8 +6,7 @@
   <!-- Arguments -->
   <arg name="use_sim_time" default="true"/>
 
-  <!-- Move_base -->
-  <include file="$(find rocs_test)/config/move_base_config/move_base.launch"/>
+
 
   <!--- Simulation -->
   <include file="$(find rocs_simulation)/launch/stage.launch">
@@ -19,5 +19,8 @@
 
   <!--- RVIZ -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rocs_test)/config/rviz/simulation_mapping.vcg" />
+
+  <!--- Urdf model of Pioneer 3-DX -->
+  <include file="$(find rocs_simulation)/launch/pioneer3dx_urdf.launch"/>
 
 </launch>

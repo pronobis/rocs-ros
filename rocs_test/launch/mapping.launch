@@ -1,7 +1,7 @@
 <launch>
 
 <!--- Inicializate robot -->
-  <include file="$(find rocs_robot)/launch/config.launch"/>
+  <include file="$(find rocs_robot)/launch/dora_configuration.launch"/>
 
 <!--- Gmapping -->
   <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"/>
