@@ -33,6 +33,10 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #include_directories(${OpenCV_INCLUDE_DIRS})
 rosbuild_add_executable(latentsvm_multidetect src/latentsvm_multidetect.cpp)
 
+#rosbuild_add_executable(read_result src/samples/readResults.cpp)
+rosbuild_add_executable(read_results src/readResults.cpp)
+
+
 #define some target ...
 #target_link_libraries(latentsvm_multidetect ${OpenCV_LIBS})
 
