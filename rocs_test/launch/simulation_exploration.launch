@@ -8,14 +8,12 @@
   <arg name="use_sim_time" default="true"/>
 
   <!--- Simulation -->
-  <include file="$(find rocs_simulation)/launch/stage.launch">
-           <arg name="use_sim_time" value="$(arg use_sim_time)" />
-	<!---
-           <arg name="world" value="$(find rocs_simulation)/stage_worlds/cvap7_dora.world" />
-           <arg name="world" value="$(find rocs_simulation)/stage_worlds/autolab_dora.world" />
- 	-->
-           <arg name="world" value="$(find rocs_simulation)/stage_worlds/hospital_part_dora.world" />
-  </include>
+  <include file="$(find rocs_simulation)/launch/stage_cvap7_dora.launch"/>
+
+<!--- 
+  <include file="$(find rocs_simulation)/launch/stage_hospital_dora.launch"/>
+  <include file="$(find rocs_simulation)/launch/stage_autolab_dora.launch"/>
+-->
 
   <!-- Gmapping -->
   <include file="$(find rocs_test)/config/move_base_config/slam_gmapping.launch"/>  
