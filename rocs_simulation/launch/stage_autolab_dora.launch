@@ -5,7 +5,7 @@
   <!--- Simulation -->
   <include file="$(find rocs_simulation)/launch/stage.launch">
            <arg name="use_sim_time" value="$(arg use_sim_time)" />
-           <arg name="world" value="$(find rocs_simulation)/stage_worlds/autolab.world" />
+           <arg name="world" value="$(find rocs_simulation)/stage_worlds/autolab_dora.world" />
   </include>
 
 </launch>
