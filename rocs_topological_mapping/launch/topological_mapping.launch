@@ -1,0 +1,28 @@
+<launch>
+
+  <arg name="use_sim_time" default="true"/>
+
+  <!-- set use_sim_time flag -->
+  <group if="$(arg use_sim_time)">
+    <param name="/use_sim_time" value="true" />
+  </group>
+
+  <!--- RVIZ -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rocs_test)/config/rviz/simulation_topological.vcg" />
+
+  <!--- Urdf model of Pioneer 3-DX -->
+  <include file="$(find rocs_simulation)/launch/pioneer3dx_urdf.launch"/>
+
+  <!--- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <remap from="scan" to="base_scan"/>
+  </node>
+
+  <!--- Rosbag -->  
+  <node pkg="rosbag" type="play" name="rosbag" args="--clock $(find rocs_topological_mapping)/rosbag/floor6_cloudy_a2.bag /scan:=/base_scan "/>
+
+
+  <!--- Topological map builder -->
+  <node pkg="rocs_topological_mapping" type="rocs_topological_map_builder" name="topo_builder" output="screen"/>
+  
+</launch>

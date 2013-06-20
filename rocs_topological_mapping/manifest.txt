@@ -1,0 +1,23 @@
+<package>
+<description>Builds a graph containing higher level information from a 2d occupancy grid</description>
+<author>Bhaskara Marthi</author>
+<license>BSD</license>
+<review status="unreviewed" notes=""/>
+<depend package="roscpp" />
+<depend package="door_msgs" />
+<depend package="tinyxml" />
+<depend package="deprecated_msgs" />
+<depend package="robot_srvs" />
+<depend package="rosconsole" />
+<depend package="tinyxml" />
+<depend package="tf" />
+<depend package="roslib" />
+<depend package="sbpl" />
+<depend package="navfn" />
+<depend package="eigen"/>
+<depend package="bullet"/>
+
+<export>
+<cpp cflags="-I${prefix}/include -I${prefix}/srv/cpp"  lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -ltopological_graph" />
+</export>
+</package>

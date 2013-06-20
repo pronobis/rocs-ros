@@ -1,0 +1,27 @@
+<package>
+  <description brief="rocs_topological_mapping">
+
+     rocs_topological_mapping
+
+  </description>
+  <author>semmap</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rocs_topological_mapping</url>
+
+ <!-- Dependencies -->
+	<depend package="roscpp" />
+	<depend package="rosconsole" />
+	<depend package="tf" />
+	<depend package="roslib" />
+        <depend package="std_msgs"/>
+        <depend package="rosbag"/>
+        <depend package="geometry_msgs"/>
+        <depend package="sensor_msgs"/>
+        <depend package="nav_msgs"/>
+
+
+
+</package>
+
+
